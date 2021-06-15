@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.display {
+    width: 20%;
+    margin-left: 45%;
+    right: auto;
+}
+
+.calculator {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid black 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+}
+
+input {
+    width: 65px;
+    height: 20px;
+}
+
+.inputOp {
+    width: 15px;
+    height: 20px;
+    text-align: center;
+}
+
+.operationButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 700;
+    width: 75px;
+    height: 75px;
+    background-color: red;
+    border: solid black 1px;
+    text-align: center;
+    margin: 10px 5px 10px 5px ;
+
+}
+
+.operationButton:hover {
+    cursor: pointer;
+}
+
+.numberButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 700;
+    width: 75px;
+    height: 75px;
+    background-color: grey;
+    border: solid black 1px;
+    margin: 10px 5px 10px 5px ;
+}
+
+.numberButton:hover {
+    cursor: pointer;
+}
+
+.operationSymbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 700;
+    width: 75px;
+    height: 75px;
+    background-color: red;
+    border: solid black 1px;
+    text-align: center;
+}

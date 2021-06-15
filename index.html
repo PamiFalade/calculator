@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PFS Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./calculator.css">
+    </head>
+    <body>
+        <h1><u>Calculator</u></h1>
+        <div id="display" name="display">
+            <input type="text" id="input1" class="input"/>
+            <input type="text" id="operation" class="inputOp" />
+            <input type="text" id="input2" class="input"/>
+            <button onclick="calculator()">=</button>
+            <input type="text" id="answer" class="input" />
+        </div>
+
+       <div id="calculator" class="calculator">
+            <div id="9" class="numberButton" onclick="enterNumbers(9)">9</div>
+            <div id="8" class="numberButton" onclick="enterNumbers(8)">8</div>
+            <div id="7" class="numberButton" onclick="enterNumbers(7)">7</div>
+            <div id="add" class="operationButton" onclick="enterOperation('+')">+</div>
+            <div id="6" class="numberButton" onclick="enterNumbers(6)">6</div>
+            <div id="5" class="numberButton" onclick="enterNumbers(5)">5</div>
+            <div id="4" class="numberButton" onclick="enterNumbers(4)">4</div>
+            <div id="subtract" class="operationButton" onclick="enterOperation('-')">-</div>
+            <div id="3" class="numberButton" onclick="enterNumbers(3)">3</div>
+            <div id="2" class="numberButton" onclick="enterNumbers(2)">2</div>
+            <div id="1" class="numberButton" onclick="enterNumbers(1)">1</div>
+            <div id="multiply" class="operationButton" onclick="enterOperation('×')">×</div>
+            <div id="RESET" class="operationButton" onclick="reset()">RESET</div>
+            <div id="0" class="numberButton" onclick="enterNumbers(0)">0</div>
+            <div id="equals" class="operationButton" onclick="calculator()">=</div>
+            <div id="divide" class="operationButton" onclick="enterOperation('÷')">÷</div>
+       </div>
+        
+        <script src="calculator.js" async defer></script>
+    </body>
+</html>
